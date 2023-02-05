@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import s from './Section.module.scss';
 
 function Section({ children, title }) {
     return (
         
-        <div>
+        <div className={s.section}>
             <h1 className="title">{ title}</h1>
             {children}
         </div>
